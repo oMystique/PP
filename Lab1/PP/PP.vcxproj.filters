@@ -15,21 +15,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="matrix_res.h">
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMatrixCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix_res.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MultithreadedMatrixCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MultithreadedCalculatorHelper.h">
+    <ClInclude Include="ConsistendMatrixCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MultithreadedMatrixCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsistendMatrixCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

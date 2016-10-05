@@ -1,8 +1,4 @@
-#include <vector>
-#include <map>
-
-using ThreadsChargeMap = std::map<size_t, std::vector<size_t>>;
-using Matrix = std::vector<std::vector<double>>;
+#include "Definitions.h"
 
 
 static const Matrix MATRIX5x5 = {
