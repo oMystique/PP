@@ -7,7 +7,7 @@ class CConsistendMatrixCalculator
 {
 public:
 	CConsistendMatrixCalculator(const CMatrix & matrix);
-	const Matrix & CalculateMatrixAlgebraicAdds() override;
+	void CalculateMatrixAlgebraicAdds() override;
 
 private:
 	CMatrix m_matrix;

@@ -58,18 +58,12 @@ double CalcDetByGausMethod(Matrix & matrix)
 
 CMatrix::CMatrix(const Matrix & inputMatrix)
 	: m_inputMatrix(inputMatrix)
-	, m_outputMatrix(inputMatrix.size(), std::vector<double>(inputMatrix[0].size(), 0))
 {
-}
-
-const Matrix & CMatrix::GetOutputMatrix() const
-{
-	return m_outputMatrix;
 }
 
 void CMatrix::CalculateAlgebraicAddition(size_t i, size_t j)
 {
-	m_outputMatrix[i][j] = CalcMinor(i, j);
+	CalcMinor(i, j);
 }
 
 std::pair<int, int> CMatrix::GetInputMatrixSize() const

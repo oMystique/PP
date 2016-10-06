@@ -6,7 +6,7 @@ CConsistendMatrixCalculator::CConsistendMatrixCalculator(const CMatrix & matrix)
 {
 }
 
-const Matrix & CConsistendMatrixCalculator::CalculateMatrixAlgebraicAdds()
+void CConsistendMatrixCalculator::CalculateMatrixAlgebraicAdds()
 {
 	auto matrixSize = m_matrix.GetInputMatrixSize();
 	for (size_t i = 0; i != matrixSize.first; i++)
@@ -16,5 +16,4 @@ const Matrix & CConsistendMatrixCalculator::CalculateMatrixAlgebraicAdds()
 			m_matrix.CalculateAlgebraicAddition(i, j);
 		}
 	}
-	return m_matrix.GetOutputMatrix();
 }

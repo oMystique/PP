@@ -5,5 +5,5 @@ class IMatrixCalculator
 {
 public:
 	virtual ~IMatrixCalculator() = default;
-	virtual const Matrix & CalculateMatrixAlgebraicAdds() = 0;
+	virtual void CalculateMatrixAlgebraicAdds() = 0;
 };

@@ -17,7 +17,7 @@ CMultithreadedMatrixCalculator::CMultithreadedMatrixCalculator(const CMatrix & m
 	FillThreadsChargeMap();
 }
 
-const Matrix & CMultithreadedMatrixCalculator::CalculateMatrixAlgebraicAdds()
+void CMultithreadedMatrixCalculator::CalculateMatrixAlgebraicAdds()
 {
 	HANDLE *hThreads = *std::make_shared<HANDLE*>(new HANDLE[m_threadsCount]);
 	DWORD *dwThreadsId = *std::make_shared<DWORD*>(new DWORD[m_threadsCount]);
@@ -28,8 +28,6 @@ const Matrix & CMultithreadedMatrixCalculator::CalculateMatrixAlgebraicAdds()
 	}
 
 	WaitForMultipleObjects(m_threadsCount, hThreads, TRUE, INFINITE);
-
-	return m_matrix.GetOutputMatrix();
 }
 
 void CMultithreadedMatrixCalculator::FillThreadsChargeMap()

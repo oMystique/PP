@@ -7,7 +7,7 @@ class CMultithreadedMatrixCalculator
 {
 public:
 	CMultithreadedMatrixCalculator(const CMatrix & matrix, size_t threadsCount);
-	const Matrix & CalculateMatrixAlgebraicAdds()override;
+	void CalculateMatrixAlgebraicAdds()override;
 	DWORD WINAPI CalculateLine(PVOID pvParam);
 
 private:
